@@ -1,4 +1,4 @@
-package com.entity;
+package org.entity;
 
 public class Reader extends User {
     private String cardNumber;
@@ -16,5 +16,12 @@ public class Reader extends User {
 
     public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Reader: {" +
+                "cardNumber='" + cardNumber + '\'' +
+                ','+ super.toString();
     }
 }

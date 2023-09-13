@@ -1,15 +1,15 @@
-package com.entity;
+package org.entity;
 
 public class User {
 
     private long userId;
-    private String lastName,firstName,email,password;
+    private String lastName, firstName, email, password;
 
     public User() {
     }
 
-    public User(long userId,String lastName, String firstName, String email, String password) {
-        this.userId=userId;
+    public User(long userId, String lastName, String firstName, String email, String password) {
+        this.userId = userId;
         this.lastName = lastName;
         this.firstName = firstName;
         this.email = email;
@@ -54,5 +54,15 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "userId=" + userId +
+                ", lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

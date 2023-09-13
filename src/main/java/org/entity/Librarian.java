@@ -1,4 +1,4 @@
-package com.entity;
+package org.entity;
 
 public class Librarian extends User {
  private String employeeID;
@@ -13,5 +13,12 @@ public class Librarian extends User {
 
     public void setEmployeeID(String employeeID) {
         this.employeeID = employeeID;
+    }
+
+    @Override
+    public String toString() {
+        return "Librarian : {" +
+                "employeeID='" + employeeID + '\'' +
+                ','+super.toString();
     }
 }
